@@ -154,16 +154,17 @@
 </head>
 <body>
     <section id="section1">
-        <h1>Lesson 1 - Exercise: Understanding the Downhill Analogy</h1>
-        <div class="image-placeholder">
+<div class="image-placeholder">
             <img src="/placeholder.svg?height=300&width=600" alt="Image of a person doing stretching exercises before a hike, symbolizing preparation for the exercise and reinforcing the hiking analogy.">
         </div>
-        <p>Alright, future optimizer, are you ready to get your brain muscles working? 💪 It's time for our first exercise lesson! In this set of challenges, we'll test your understanding of the 'downhill' analogy we used to explain Gradient Descent. No code this time, just pure conceptual thinking. Let's see if you've truly grasped the core idea!</p>
+        <h1>Lesson 1 - Exercise: Understanding the Downhill Analogy</h1>
+        
+        <p>It's time for our first exercise lesson! In this set of challenges, we'll test your understanding of the 'downhill' analogy we used to explain Gradient Descent. No code this time, just pure conceptual thinking. Let's see if you've truly grasped the core idea!</p>
         <div class="continue-button" onclick="showNextSection(2)">Continue</div>
     </section>
 
     <section id="section2">
-        <h2>Exercise 1: Easy - Simple Path Identification</h2>
+        <h2>Exercise 1: Simple Path Identification</h2>
         <p>Let's start with a gentle warm-up. Imagine you're standing at point 'A' on a hill, ready to descend using Gradient Descent.</p>
         <div class="continue-button" onclick="showNextSection(3)">Continue</div>
     </section>
@@ -193,7 +194,6 @@
 
     <section id="section7">
         <div class="test-your-knowledge">
-            <h3>Test Your Knowledge</h3>
             <h4>If you were a Gradient Descent algorithm starting at point 'A' and aiming to go downhill as quickly as possible, which path would you initially choose to take?</h4>
             <button class="check-button" onclick="checkAnswer('exercise1', 0)">Path 1</button>
             <button class="check-button" onclick="checkAnswer('exercise1', 1)">Path 2</button>
@@ -205,34 +205,32 @@
     </section>
 
     <section id="section8">
-        <h2>Exercise 2: Medium - Learning Rate and Step Size</h2>
-        <p>Now, let's think about step sizes and the learning rate. Imagine you're using Gradient Descent with a learning rate of $$\alpha = 0.1$$.</p>
+        <h2>Exercise 2: Learning Rate and Step Size</h2>
+        <p>Now, let's think about step sizes and the learning rate. Imagine you're using Gradient Descent with a learning rate of \(\alpha = 0.1\).</p>
         <div class="continue-button" onclick="showNextSection(9)">Continue</div>
     </section>
 
     <section id="section9">
-        <p>In one iteration, you carefully calculate the gradient of your cost function at your current position and find it to be $$\nabla_{\beta}C(\beta) = 5$$.</p>
+        <p>In one iteration, you carefully calculate the gradient of your cost function at your current position and find it to be \(\nabla_{\beta}C(\beta) = 5\).</p>
         <div class="continue-button" onclick="showNextSection(10)">Continue</div>
     </section>
 
     <section id="section10">
         <div class="test-your-knowledge">
-            <h3>Test Your Knowledge</h3>
-            <h4>(a) By how much and in which direction will your parameters ($$\beta$$) change in this iteration, based on the Gradient Descent update rule?</h4>
+            <h4>By how much and in which direction will your parameters (\(\beta\)) change in this iteration, based on the Gradient Descent update rule?</h4>
             <button class="check-button" onclick="checkAnswer('exercise2a', 0)">Increase by 0.5</button>
             <button class="check-button" onclick="checkAnswer('exercise2a', 1)">Decrease by 0.5</button>
             <button class="check-button" onclick="checkAnswer('exercise2a', 2)">Increase by 5</button>
             <button class="check-button" onclick="checkAnswer('exercise2a', 3)">Decrease by 5</button>
             <p id="exercise2a-feedback" style="display: none;"></p>
         </div>
-        <p>Remember the update rule: $$\beta_{new} = \beta_{old} - \alpha \nabla_{\beta}C(\beta)$$. We subtract the learning rate times the gradient.</p>
+        <p>Remember the update rule: \(\beta_{new} = \beta_{old} - \alpha \nabla_{\beta}C(\beta)\). We subtract the learning rate times the gradient.</p>
         <div class="continue-button" onclick="showNextSection(11)">Continue</div>
     </section>
 
     <section id="section11">
         <div class="test-your-knowledge">
-            <h3>Test Your Knowledge</h3>
-            <h4>(b) Now, imagine you <em>increased</em> the learning rate to $$\alpha = 0.5$$. With the same gradient $$\nabla_{\beta}C(\beta) = 5$$, would the parameter change be larger or smaller compared to when $$\alpha = 0.1$$?</h4>
+            <h4>Now, imagine you <em>increased</em> the learning rate to \(\alpha = 0.5\). With the same gradient \(\nabla_{\beta}C(\beta) = 5\), would the parameter change be larger or smaller compared to when \(\alpha = 0.1\)?</h4>
             <button class="check-button" onclick="checkAnswer('exercise2b', 0)">Larger</button>
             <button class="check-button" onclick="checkAnswer('exercise2b', 1)">Smaller</button>
             <button class="check-button" onclick="checkAnswer('exercise2b', 2)">The same</button>
@@ -243,25 +241,24 @@
     </section>
 
     <section id="section12">
-        <h2>Exercise 3: Hard - Convergence and Stopping</h2>
+        <h2>Exercise 3: Convergence and Stopping</h2>
         <p>Let's think about when Gradient Descent stops. You're running Gradient Descent, and after many iterations, you make an interesting observation:</p>
         <div class="continue-button" onclick="showNextSection(13)">Continue</div>
     </section>
 
     <section id="section13">
-        <p>The magnitude of the gradient $$||\nabla_{\beta}C(\beta)||_2$$ is still relatively large (say, around 2), indicating there's still a noticeable slope.</p>
+        <p>The magnitude of the gradient \(||\nabla_{\beta}C(\beta)||_2\) is still relatively large (say, around 2), indicating there's still a noticeable slope.</p>
         <div class="continue-button" onclick="showNextSection(14)">Continue</div>
     </section>
 
     <section id="section14">
-        <p>However, the cost function value $$C(\beta)$$ is decreasing, but <em>very, very slowly</em> with each iteration. It's almost flatlining.</p>
+        <p>However, the cost function value \(C(\beta)\) is decreasing, but <em>very, very slowly</em> with each iteration. It's almost flatlining.</p>
         <div class="continue-button" onclick="showNextSection(15)">Continue</div>
     </section>
 
     <section id="section15">
         <div class="test-your-knowledge">
-            <h3>Test Your Knowledge</h3>
-            <h4>(a) In this situation, is it likely that Gradient Descent has already converged to a minimum of the cost function? Why or why not?</h4>
+            <h4>In this situation, is it likely that Gradient Descent has already converged to a minimum of the cost function? Why or why not?</h4>
             <button class="check-button" onclick="checkAnswer('exercise3a', 0)">Yes, because the cost function is decreasing, even if slowly.</button>
             <button class="check-button" onclick="checkAnswer('exercise3a', 1)">No, because the gradient magnitude is still relatively large.</button>
             <button class="check-button" onclick="checkAnswer('exercise3a', 2)">Maybe, it depends on the learning rate.</button>
@@ -273,9 +270,8 @@
 
     <section id="section16">
         <div class="test-your-knowledge">
-            <h3>Test Your Knowledge</h3>
-            <h4>(b) In this scenario of slow cost decrease with a still-large gradient, which termination condition for Gradient Descent would be more important to consider: the gradient magnitude threshold ($$\epsilon$$) or the maximum number of iterations (N)?</h4>
-            <button class="check-button" onclick="checkAnswer('exercise3b', 0)">Gradient magnitude threshold ($$\epsilon$$)</button>
+            <h4>In this scenario of slow cost decrease with a still-large gradient, which termination condition for Gradient Descent would be more important to consider: the gradient magnitude threshold (\(\epsilon\)) or the maximum number of iterations (N)?</h4>
+            <button class="check-button" onclick="checkAnswer('exercise3b', 0)">Gradient magnitude threshold (\(\epsilon\))</button>
             <button class="check-button" onclick="checkAnswer('exercise3b', 1)">Maximum number of iterations (N)</button>
             <button class="check-button" onclick="checkAnswer('exercise3b', 2)">Neither, Gradient Descent should be stopped immediately.</button>
             <p id="exercise3b-feedback" style="display: none;"></p>
@@ -285,8 +281,7 @@
     </section>
 
     <section id="section17">
-        <h2>Exercise Lesson Complete!</h2>
-        <p>Congratulations, downhill expert! 🎉 You've successfully navigated our first exercise lesson and tested your understanding of the Gradient Descent analogy. You're now even more prepared for the exciting journey ahead. Keep up the great work, and get ready for more hands-on challenges!</p>
+        <p>You've successfully navigated our first exercise lesson and tested your understanding of the Gradient Descent analogy. You're now even more prepared for the exciting journey ahead. Keep up the great work, and get ready for more hands-on challenges!</p>
         <div class="continue-button" onclick="showNextSection(18)">Continue</div>
     </section>
 
