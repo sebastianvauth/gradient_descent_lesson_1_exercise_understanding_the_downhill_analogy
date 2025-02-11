@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1 - Exercise: Understanding the Downhill Analogy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            font-size: 150%;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+            margin-top: 20px;
+        }
+        p, li {
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .image-placeholder, .interactive-placeholder, .continue-button, .vocab-section, .why-it-matters, .test-your-knowledge, .faq-section, .stop-and-think {
+            text-align: left;
+        }
+        .image-placeholder img, .interactive-placeholder img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .vocab-section, .why-it-matters, .test-your-knowledge, .faq-section, .stop-and-think {
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .vocab-section {
+            background-color: #f0f8ff;
+        }
+        .vocab-section h3 {
+            color: #1e90ff;
+            font-size: 0.75em;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .vocab-section h4 {
+            color: #000;
+            font-size: 0.9em;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+        .vocab-term {
+            font-weight: bold;
+            color: #1e90ff;
+        }
+        .why-it-matters {
+            background-color: #ffe6f0;
+        }
+        .why-it-matters h3 {
+            color: #d81b60;
+            font-size: 0.75em;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .stop-and-think {
+            background-color: #e6e6ff;
+        }
+        .stop-and-think h3 {
+            color: #4b0082;
+            font-size: 0.75em;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .continue-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            color: #ffffff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .reveal-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            color: #ffffff;
+            background-color: #4b0082;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .test-your-knowledge {
+            background-color: #e6ffe6; /* Light green background */
+        }
+        .test-your-knowledge h3 {
+            color: #28a745; /* Dark green heading */
+            font-size: 0.75em;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .test-your-knowledge h4 {
+            color: #000;
+            font-size: 0.9em;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+        .test-your-knowledge p {
+            margin-bottom: 15px;
+        }
+        .check-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            color: #ffffff;
+            background-color: #28a745; /* Green background */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            font-size: 1em;
+        }
+        .faq-section {
+            background-color: #fffbea; /* Light yellow background */
+        }
+        .faq-section h3 {
+            color: #ffcc00; /* Bright yellow heading */
+            font-size: 0.75em;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .faq-section h4 {
+            color: #000;
+            font-size: 0.9em;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <section id="section1">
+        <h1>Lesson 1 - Exercise: Understanding the Downhill Analogy</h1>
+        <div class="image-placeholder">
+            <img src="/placeholder.svg?height=300&width=600" alt="Image of a person doing stretching exercises before a hike, symbolizing preparation for the exercise and reinforcing the hiking analogy.">
+        </div>
+        <p>Alright, future optimizer, are you ready to get your brain muscles working? 💪 It's time for our first exercise lesson! In this set of challenges, we'll test your understanding of the 'downhill' analogy we used to explain Gradient Descent. No code this time, just pure conceptual thinking. Let's see if you've truly grasped the core idea!</p>
+        <div class="continue-button" onclick="showNextSection(2)">Continue</div>
+    </section>
+
+    <section id="section2">
+        <h2>Exercise 1: Easy - Simple Path Identification</h2>
+        <p>Let's start with a gentle warm-up. Imagine you're standing at point 'A' on a hill, ready to descend using Gradient Descent.</p>
+        <div class="continue-button" onclick="showNextSection(3)">Continue</div>
+    </section>
+
+    <section id="section3">
+        <p>Three paths are marked from your starting point:</p>
+        <div class="continue-button" onclick="showNextSection(4)">Continue</div>
+    </section>
+
+    <section id="section4">
+        <p><strong>Path 1:</strong> A steep path going directly downhill.</p>
+        <div class="continue-button" onclick="showNextSection(5)">Continue</div>
+    </section>
+
+    <section id="section5">
+        <p><strong>Path 2:</strong> A path going gently downhill, less steep than Path 1.</p>
+        <div class="continue-button" onclick="showNextSection(6)">Continue</div>
+    </section>
+
+    <section id="section6">
+        <p><strong>Path 3:</strong> A path that, surprisingly, goes slightly <em>uphill</em> at first.</p>
+        <div class="image-placeholder">
+            <img src="/placeholder.svg?height=300&width=600" alt="Image showing a simple hill slope with point 'A' marked on it. Three paths originating from 'A' are shown: Path 1 (steep downhill arrow), Path 2 (gentle downhill arrow), Path 3 (initially uphill, then levels out). Label Paths 1, 2, 3 clearly.">
+        </div>
+        <div class="continue-button" onclick="showNextSection(7)">Continue</div>
+    </section>
+
+    <section id="section7">
+        <div class="test-your-knowledge">
+            <h3>Test Your Knowledge</h3>
+            <h4>If you were a Gradient Descent algorithm starting at point 'A' and aiming to go downhill as quickly as possible, which path would you initially choose to take?</h4>
+            <button class="check-button" onclick="checkAnswer('exercise1', 0)">Path 1</button>
+            <button class="check-button" onclick="checkAnswer('exercise1', 1)">Path 2</button>
+            <button class="check-button" onclick="checkAnswer('exercise1', 2)">Path 3</button>
+            <p id="exercise1-feedback" style="display: none;"></p>
+        </div>
+        <p>Remember, Gradient Descent is all about taking the <em>steepest downhill step</em> in each iteration. Path 1 is the clear winner here!</p>
+        <div class="continue-button" onclick="showNextSection(8)">Continue</div>
+    </section>
+
+    <section id="section8">
+        <h2>Exercise 2: Medium - Learning Rate and Step Size</h2>
+        <p>Now, let's think about step sizes and the learning rate. Imagine you're using Gradient Descent with a learning rate of $$\alpha = 0.1$$.</p>
+        <div class="continue-button" onclick="showNextSection(9)">Continue</div>
+    </section>
+
+    <section id="section9">
+        <p>In one iteration, you carefully calculate the gradient of your cost function at your current position and find it to be $$\nabla_{\beta}C(\beta) = 5$$.</p>
+        <div class="continue-button" onclick="showNextSection(10)">Continue</div>
+    </section>
+
+    <section id="section10">
+        <div class="test-your-knowledge">
+            <h3>Test Your Knowledge</h3>
+            <h4>(a) By how much and in which direction will your parameters ($$\beta$$) change in this iteration, based on the Gradient Descent update rule?</h4>
+            <button class="check-button" onclick="checkAnswer('exercise2a', 0)">Increase by 0.5</button>
+            <button class="check-button" onclick="checkAnswer('exercise2a', 1)">Decrease by 0.5</button>
+            <button class="check-button" onclick="checkAnswer('exercise2a', 2)">Increase by 5</button>
+            <button class="check-button" onclick="checkAnswer('exercise2a', 3)">Decrease by 5</button>
+            <p id="exercise2a-feedback" style="display: none;"></p>
+        </div>
+        <p>Remember the update rule: $$\beta_{new} = \beta_{old} - \alpha \nabla_{\beta}C(\beta)$$. We subtract the learning rate times the gradient.</p>
+        <div class="continue-button" onclick="showNextSection(11)">Continue</div>
+    </section>
+
+    <section id="section11">
+        <div class="test-your-knowledge">
+            <h3>Test Your Knowledge</h3>
+            <h4>(b) Now, imagine you <em>increased</em> the learning rate to $$\alpha = 0.5$$. With the same gradient $$\nabla_{\beta}C(\beta) = 5$$, would the parameter change be larger or smaller compared to when $$\alpha = 0.1$$?</h4>
+            <button class="check-button" onclick="checkAnswer('exercise2b', 0)">Larger</button>
+            <button class="check-button" onclick="checkAnswer('exercise2b', 1)">Smaller</button>
+            <button class="check-button" onclick="checkAnswer('exercise2b', 2)">The same</button>
+            <p id="exercise2b-feedback" style="display: none;"></p>
+        </div>
+        <p>The learning rate directly controls the step size. A larger learning rate = larger steps!</p>
+        <div class="continue-button" onclick="showNextSection(12)">Continue</div>
+    </section>
+
+    <section id="section12">
+        <h2>Exercise 3: Hard - Convergence and Stopping</h2>
+        <p>Let's think about when Gradient Descent stops. You're running Gradient Descent, and after many iterations, you make an interesting observation:</p>
+        <div class="continue-button" onclick="showNextSection(13)">Continue</div>
+    </section>
+
+    <section id="section13">
+        <p>The magnitude of the gradient $$||\nabla_{\beta}C(\beta)||_2$$ is still relatively large (say, around 2), indicating there's still a noticeable slope.</p>
+        <div class="continue-button" onclick="showNextSection(14)">Continue</div>
+    </section>
+
+    <section id="section14">
+        <p>However, the cost function value $$C(\beta)$$ is decreasing, but <em>very, very slowly</em> with each iteration. It's almost flatlining.</p>
+        <div class="continue-button" onclick="showNextSection(15)">Continue</div>
+    </section>
+
+    <section id="section15">
+        <div class="test-your-knowledge">
+            <h3>Test Your Knowledge</h3>
+            <h4>(a) In this situation, is it likely that Gradient Descent has already converged to a minimum of the cost function? Why or why not?</h4>
+            <button class="check-button" onclick="checkAnswer('exercise3a', 0)">Yes, because the cost function is decreasing, even if slowly.</button>
+            <button class="check-button" onclick="checkAnswer('exercise3a', 1)">No, because the gradient magnitude is still relatively large.</button>
+            <button class="check-button" onclick="checkAnswer('exercise3a', 2)">Maybe, it depends on the learning rate.</button>
+            <p id="exercise3a-feedback" style="display: none;"></p>
+        </div>
+        <p>Remember, at a minimum, the gradient should be close to zero (flat surface). A large gradient magnitude suggests you're still on a slope.</p>
+        <div class="continue-button" onclick="showNextSection(16)">Continue</div>
+    </section>
+
+    <section id="section16">
+        <div class="test-your-knowledge">
+            <h3>Test Your Knowledge</h3>
+            <h4>(b) In this scenario of slow cost decrease with a still-large gradient, which termination condition for Gradient Descent would be more important to consider: the gradient magnitude threshold ($$\epsilon$$) or the maximum number of iterations (N)?</h4>
+            <button class="check-button" onclick="checkAnswer('exercise3b', 0)">Gradient magnitude threshold ($$\epsilon$$)</button>
+            <button class="check-button" onclick="checkAnswer('exercise3b', 1)">Maximum number of iterations (N)</button>
+            <button class="check-button" onclick="checkAnswer('exercise3b', 2)">Neither, Gradient Descent should be stopped immediately.</button>
+            <p id="exercise3b-feedback" style="display: none;"></p>
+        </div>
+        <p>In slow progress scenarios, the 'maximum iterations' condition acts as a crucial safeguard to stop training within a reasonable time, even if perfect convergence is slow or elusive.</p>
+        <div class="continue-button" onclick="showNextSection(17)">Continue</div>
+    </section>
+
+    <section id="section17">
+        <h2>Exercise Lesson Complete!</h2>
+        <p>Congratulations, downhill expert! 🎉 You've successfully navigated our first exercise lesson and tested your understanding of the Gradient Descent analogy. You're now even more prepared for the exciting journey ahead. Keep up the great work, and get ready for more hands-on challenges!</p>
+        <div class="continue-button" onclick="showNextSection(18)">Continue</div>
+    </section>
+
+    <script>
+        // Show the first section initially
+        document.getElementById("section1").style.display = "block";
+        document.getElementById("section1").style.opacity = "1";
+
+        function showNextSection(nextSectionId) {
+            const currentButton = event.target;
+            const nextSection = document.getElementById("section" + nextSectionId);
+            
+            currentButton.style.display = "none";
+            
+            nextSection.style.display = "block";
+            setTimeout(() => {
+                nextSection.style.opacity = "1";
+            }, 10);
+
+            setTimeout(() => {
+                nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 500);
+        }
+
+        function checkAnswer(exerciseId, selectedIndex) {
+            const feedbackElement = document.getElementById(exerciseId + '-feedback');
+            let feedback = '';
+            let isCorrect = false;
+
+            switch(exerciseId) {
+                case 'exercise1':
+                    isCorrect = selectedIndex === 0;
+                    feedback = isCorrect ? 
+                        "Correct! Path 1 is described as 'steep downhill', which aligns perfectly with Gradient Descent's goal of taking the steepest downhill step." :
+                        "Not quite. Remember, Gradient Descent aims for the steepest descent.";
+                    break;
+                case 'exercise2a':
+                    isCorrect = selectedIndex === 1;
+                    feedback = isCorrect ?
+                        "Correct! Using the update rule β_new = β_old - α ∇_βC(β), the change is - (0.1 × 5) = -0.5. So, the parameters will decrease by 0.5." :
+                        "Not quite. Remember the update rule: β_new = β_old - α ∇_βC(β). We subtract the learning rate times the gradient.";
+                    break;
+                case 'exercise2b':
+                    isCorrect = selectedIndex === 0;
+                    feedback = isCorrect ?
+                        "Correct! A larger learning rate means larger steps. With α = 0.5, the change would be - (0.5 × 5) = -2.5, which is larger in magnitude than -0.5." :
+                        "Not quite. Think about how the learning rate affects the step size in the update rule.";
+                    break;
+                case 'exercise3a':
+                    isCorrect = selectedIndex === 1;
+                    feedback = isCorrect ?
+                        "Correct! A large gradient magnitude means you're still on a slope, not at the flat bottom of a valley (minimum). Even if the cost is decreasing slowly, you haven't reached convergence yet." :
+                        "Not quite. Remember, at a minimum, the gradient should be close to zero (flat surface).";
+                    break;
+                case 'exercise3b':
+                    isCorrect = selectedIndex === 1;
+                    feedback = isCorrect ?
+                        "Correct! In this case, where gradient is still large but progress is slow, the maximum iterations condition becomes crucial to prevent the algorithm from running for too long without significant improvement." :
+                        "Not quite. Think about preventing the algorithm from running indefinitely in this slow progress scenario.";
+                    break;
+            }
+
+            feedbackElement.textContent = feedback;
+            feedbackElement.style.display = 'block';
+            feedbackElement.style.color = isCorrect ? 'green' : 'red';
+        }
+    </script>
+</body>
+</html>
